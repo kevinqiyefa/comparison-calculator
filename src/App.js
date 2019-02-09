@@ -1,25 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import CalculatorForm from './components/CalculatorForm';
+import ComparisonResults from './components/ComparisonResults';
 import './App.css';
 
 class App extends Component {
+  state = {
+    isFilled: false
+  };
+
+  completedForm = isCompleted => {
+    this.setState({
+      isFilled: isCompleted
+    });
+  };
+
   render() {
+    let confirmedCompletedMsg = !this.state.isFilled ? (
+      <div>
+        <div>
+          <i className="fas fa-chevron-up" />
+        </div>
+        Fill out the form to get a nutrient comparison
+      </div>
+    ) : (
+      <div>
+        See the the nutrient comparison below
+        <div>
+          <i className="fas fa-chevron-down" />
+        </div>
+      </div>
+    );
+
+    let comparisonResults = this.state.isFilled ? <ComparisonResults /> : null;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <CalculatorForm completedForm={this.completedForm} />
+        {confirmedCompletedMsg}
+        {comparisonResults}
       </div>
     );
   }
