@@ -1,8 +1,20 @@
 body {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #fbfbfb;
+  color: #444;
+  font-family: Lato, sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
 }
 .App {
   text-align: center;
+  margin-top: 5em;
+  /* background-color: #fff; */
+  max-width: 1000px;
+  padding: 3em;
+  width: 700px;
 }
 
 .incompleted::before {
