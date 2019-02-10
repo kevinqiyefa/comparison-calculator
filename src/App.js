@@ -23,19 +23,19 @@ class App extends Component {
 
   render() {
     let confirmedCompletedMsg = !this.state.isFilled ? (
-      <div>
+      <h4>
         <div>
           <i className="fas fa-chevron-up" />
         </div>
         Fill out the form to get a nutrient comparison
-      </div>
+      </h4>
     ) : (
-      <div>
+      <h4>
         See the the nutrient comparison below
         <div>
           <i className="fas fa-chevron-down" />
         </div>
-      </div>
+      </h4>
     );
 
     let comparisonResults = this.state.isFilled ? (

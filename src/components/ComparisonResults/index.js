@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Aux from '../../hoc/Aux';
 import logo from '../../assets/logo_utensils.svg';
+import './style.css';
 
 class ComparisonResults extends Component {
   state = {
@@ -11,9 +13,9 @@ class ComparisonResults extends Component {
   static getDerivedStateFromProps(nextProps, prevState) {
     const formData = nextProps.formData;
 
-    let p = (formData.protein + 1.5) / (formData.caloric / 10000);
-    let f = (formData.fat + 1) / (formData.caloric / 10000);
-    let c = (1000 - p * 3.5 - f * 8.5) / 3.5;
+    let p = Math.round((formData.protein + 1.5) / (formData.caloric / 10000));
+    let f = Math.round((formData.fat + 1) / (formData.caloric / 10000));
+    let c = Math.round((1000 - p * 3.5 - f * 8.5) / 3.5);
     c = c < 0 ? 0 : c;
 
     if (
@@ -54,7 +56,7 @@ class ComparisonResults extends Component {
     const nnnFoodData = this.nomnomnowData(nnn);
 
     let otherBrand = (
-      <div>
+      <Aux>
         <h3>{brand}</h3>
         <label>Protein</label>
         <h1>{this.state.protein}</h1>
@@ -62,12 +64,12 @@ class ComparisonResults extends Component {
         <h1>{this.state.fat}</h1>
         <label>Carbohydrate</label>
         <h1>{this.state.carbohydrat}</h1>
-      </div>
+      </Aux>
     );
 
     let nomnomnow = (
-      <div>
-        <img src={logo} alt="logo" />
+      <Aux>
+        <img className="small-logo-icon" src={logo} alt="logo" />
         <h3>{nnn}</h3>
         <label>Protein *</label>
         <h1>{nnnFoodData.protein}</h1>
@@ -75,13 +77,15 @@ class ComparisonResults extends Component {
         <h1>{nnnFoodData.fat}</h1>
         <label>Carbohydrate</label>
         <h1>{nnnFoodData.carbohydrate}</h1>
-      </div>
+      </Aux>
     );
 
     return (
-      <div>
-        <div>{otherBrand}</div>
-        <div>{nomnomnow}</div>
+      <div className="result-container">
+        <div className="results">
+          <div>{otherBrand}</div>
+          <div>{nomnomnow}</div>
+        </div>
         <h5>
           Learn about the role of protein, fat, and carbs in a dog's diet.
         </h5>

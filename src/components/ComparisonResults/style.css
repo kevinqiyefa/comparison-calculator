@@ -1,0 +1,15 @@
+.result-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.small-logo-icon {
+  display: block;
+  height: 40px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.results {
+  display: flex;
+}
