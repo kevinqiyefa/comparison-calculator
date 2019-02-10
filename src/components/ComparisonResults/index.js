@@ -57,12 +57,12 @@ class ComparisonResults extends Component {
 
     let otherBrand = (
       <Aux>
-        <h3>{brand}</h3>
-        <label>Protein</label>
+        <h3 className="brand">{brand}</h3>
+        <label className="label">Protein</label>
         <h1>{this.state.protein}</h1>
-        <label>Fat</label>
+        <label className="label">Fat</label>
         <h1>{this.state.fat}</h1>
-        <label>Carbohydrate</label>
+        <label className="label">Carbohydrate</label>
         <h1>{this.state.carbohydrat}</h1>
       </Aux>
     );
@@ -70,28 +70,32 @@ class ComparisonResults extends Component {
     let nomnomnow = (
       <Aux>
         <img className="small-logo-icon" src={logo} alt="logo" />
-        <h3>{nnn}</h3>
-        <label>Protein *</label>
-        <h1>{nnnFoodData.protein}</h1>
-        <label>Fat</label>
-        <h1>{nnnFoodData.fat}</h1>
-        <label>Carbohydrate</label>
-        <h1>{nnnFoodData.carbohydrate}</h1>
+        <h3 className="brand">{nnn}</h3>
+        <label className="label">Protein *</label>
+        <h1 className="color-orange">{nnnFoodData.protein}</h1>
+        <label className="label">Fat</label>
+        <h1 className="color-teal">{nnnFoodData.fat}</h1>
+        <label className="label">Carbohydrate</label>
+        <h1 className="color-yellow">{nnnFoodData.carbohydrate}</h1>
       </Aux>
     );
 
     return (
-      <div className="result-container">
-        <div className="results">
+      <div className="result-container ">
+        <div className="results padding-bottom">
           <div>{otherBrand}</div>
           <div>{nomnomnow}</div>
         </div>
-        <h5>
-          Learn about the role of protein, fat, and carbs in a dog's diet.
-        </h5>
-        <h5>
+        <div className="padding-bottom">
+          Learn about{' '}
+          <a href="https://www.nomnomnow.com/learn/pet-expert/understanding-dog-food-nutrients">
+            the role of protein, fat, and carbs
+          </a>{' '}
+          in a dog's diet.
+        </div>
+        <div className="text-smallest">
           * All units above are given in grams per 1000 calories (g/kcal).
-        </h5>
+        </div>
       </div>
     );
   }

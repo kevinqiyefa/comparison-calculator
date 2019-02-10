@@ -1,6 +1,7 @@
 .result-container {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
+  color: #818181;
 }
 
 .small-logo-icon {
@@ -12,4 +13,59 @@
 
 .results {
   display: flex;
+}
+
+.results > div {
+  padding: 20px 0 0 20px;
+  width: 100%;
+}
+.results > div:first-child {
+  border-right: 2px solid #e0e0e0;
+  padding: 70px 20px 0 0;
+  text-align: right;
+}
+
+.results > div:nth-child(2) {
+  text-align: left;
+}
+
+h3.brand {
+  font-weight: 300;
+  line-height: 1.1em;
+  height: 60px;
+  margin: 0;
+  font-size: 22px;
+  color: #444444;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.1em;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.color-orange {
+  color: #f06324;
+}
+.color-teal {
+  color: #23ac9b;
+}
+
+.color-yellow {
+  color: #e2d16e;
+}
+
+a {
+  color: #f06324;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.text-smallest {
+  font-size: 13px;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
 }
