@@ -5,12 +5,19 @@ import './App.css';
 
 class App extends Component {
   state = {
-    isFilled: false
+    isFilled: false,
+    comparisonInfo: null
   };
 
   completedForm = isCompleted => {
     this.setState({
       isFilled: isCompleted
+    });
+  };
+
+  getComparisonInfo = info => {
+    this.setState({
+      comparisonInfo: info
     });
   };
 
@@ -31,10 +38,16 @@ class App extends Component {
       </div>
     );
 
-    let comparisonResults = this.state.isFilled ? <ComparisonResults /> : null;
+    let comparisonResults = this.state.isFilled ? (
+      <ComparisonResults formData={this.state.comparisonInfo} />
+    ) : null;
+
     return (
       <div className="App">
-        <CalculatorForm completedForm={this.completedForm} />
+        <CalculatorForm
+          completedForm={this.completedForm}
+          comparisonInfo={this.getComparisonInfo}
+        />
         {confirmedCompletedMsg}
         {comparisonResults}
       </div>

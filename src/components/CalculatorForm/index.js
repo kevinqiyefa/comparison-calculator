@@ -24,6 +24,7 @@ class CalculatorForm extends Component {
         this.state.caloric
       ) {
         this.props.completedForm(true);
+        this.props.comparisonInfo(this.state);
       } else {
         this.props.completedForm(false);
       }
