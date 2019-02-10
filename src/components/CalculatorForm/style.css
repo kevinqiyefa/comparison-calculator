@@ -2,7 +2,7 @@
   text-align: left;
 }
 
-.food-brand,
+.food-brands,
 .inputs {
   display: flex;
   padding-bottom: 10px;
@@ -47,15 +47,23 @@ select {
   padding-right: 10px;
 }
 
-.inputs div {
+.ingredients {
   width: 100%;
 }
 
-input {
+.ingredients input {
   background-color: #fff;
   border: 1px solid #eee;
-
   font-size: 1em;
-  padding: 10px 0;
+  padding: 10px;
   width: 100%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 630px) {
+  .food-brands,
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
 }

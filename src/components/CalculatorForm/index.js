@@ -63,7 +63,7 @@ class CalculatorForm extends Component {
 
     return (
       <form className="calculator-form">
-        <div className="food-brand padding-bottom-small">
+        <div className="food-brands padding-bottom-small">
           <div className="other-food-brands padding-bottom-small">
             <label className="label">Name of dog food brand</label>
             <select value={this.state.brand} onChange={this.handleChangeBrand}>
@@ -90,7 +90,7 @@ class CalculatorForm extends Component {
         {infoText}
 
         <div className="inputs">
-          <div className="padding-bottom-small padding-right-small">
+          <div className="padding-bottom-small padding-right-small ingredients">
             <label className="label">% protein (min.)</label>
             <input
               type="number"
@@ -99,12 +99,12 @@ class CalculatorForm extends Component {
             />
           </div>
 
-          <div className="padding-bottom-small padding-right-small">
+          <div className="padding-bottom-small padding-right-small ingredients">
             <label className="label">% fat (min.)</label>
             <input type="number" name="fat" onChange={this.handleInputChange} />
           </div>
 
-          <div className="padding-bottom-small">
+          <div className="padding-bottom-small ingredients">
             <label className="label">Caloric density (kcal/kg)</label>
             <input
               type="number"
