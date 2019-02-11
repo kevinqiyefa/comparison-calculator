@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ComparisonResults /> matches snapshot 1`] = `
+<div
+  className="result-container "
+>
+  <div
+    className="results padding-bottom"
+  >
+    <div>
+      <aux>
+        <h3
+          className="brand"
+        >
+          Bonio
+        </h3>
+        <label
+          className="label"
+        >
+          Protein
+        </label>
+        <h1>
+          8333
+        </h1>
+        <label
+          className="label"
+        >
+          Fat
+        </label>
+        <h1>
+          10000
+        </h1>
+        <label
+          className="label"
+        >
+          Carbohydrate
+        </label>
+        <h1>
+          0
+        </h1>
+      </aux>
+    </div>
+    <div>
+      <aux>
+        <img
+          alt="logo"
+          className="small-logo-icon"
+          src="logo_utensils.svg"
+        />
+        <h3
+          className="brand"
+        >
+          Heartland Beef Mash
+        </h3>
+        <label
+          className="label"
+        >
+          Protein *
+        </label>
+        <h1
+          className="color-orange"
+        >
+          80
+        </h1>
+        <label
+          className="label"
+        >
+          Fat
+        </label>
+        <h1
+          className="color-teal"
+        >
+          62
+        </h1>
+        <label
+          className="label"
+        >
+          Carbohydrate
+        </label>
+        <h1
+          className="color-yellow"
+        >
+          55
+        </h1>
+      </aux>
+    </div>
+  </div>
+  <div
+    className="padding-bottom"
+  >
+    Learn about
+     
+    <a
+      href="https://www.nomnomnow.com/learn/pet-expert/understanding-dog-food-nutrients"
+    >
+      the role of protein, fat, and carbs
+    </a>
+     
+    in a dog's diet.
+  </div>
+  <div
+    className="text-smallest"
+  >
+    * All units above are given in grams per 1000 calories (g/kcal).
+  </div>
+</div>
+`;

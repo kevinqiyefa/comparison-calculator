@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> matches snapshot 1`] = `
+<form
+  className="calculator-form"
+>
+  <div
+    className="food-brands padding-bottom-small"
+  >
+    <div
+      className="other-food-brands padding-bottom-small"
+    >
+      <label
+        className="label"
+      >
+        Name of dog food brand
+      </label>
+      <select
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value=""
+        >
+          - Select a Brand -
+        </option>
+        <option
+          value="Bonio"
+        >
+          Bonio
+        </option>
+        <option
+          value="Milk-Bone"
+        >
+          Milk-Bone
+        </option>
+        <option
+          value="Friskies"
+        >
+          Friskies
+        </option>
+      </select>
+    </div>
+    <div
+      className="nnn-food-brand padding-bottom-small"
+    >
+      <label
+        className="label"
+      >
+        Compare with NomNomNow
+      </label>
+      <select
+        onChange={[Function]}
+        value="Heartland Beef Mash"
+      >
+        <option
+          value="Porkalicious Potluck"
+        >
+          Porkalicious Potluck
+        </option>
+        <option
+          defaultValue="Heartland Beef Mash"
+        >
+          Heartland Beef Mash
+        </option>
+        <option
+          value="Chicken Chow-Wow"
+        >
+          Chicken Chow-Wow
+        </option>
+        <option
+          value="Tasty Turkey Fare"
+        >
+          Tasty Turkey Fare
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    className="padding-bottom-small"
+  >
+    Dog food brand's nutrient info:
+  </div>
+  <div
+    className="inputs"
+  >
+    <div
+      className="padding-bottom-small padding-right-small ingredients"
+    >
+      <label
+        className="label"
+      >
+        % protein (min.)
+      </label>
+      <input
+        name="protein"
+        onChange={[Function]}
+        type="number"
+      />
+    </div>
+    <div
+      className="padding-bottom-small padding-right-small ingredients"
+    >
+      <label
+        className="label"
+      >
+        % fat (min.)
+      </label>
+      <input
+        name="fat"
+        onChange={[Function]}
+        type="number"
+      />
+    </div>
+    <div
+      className="padding-bottom-small ingredients"
+    >
+      <label
+        className="label"
+      >
+        Caloric density (kcal/kg)
+      </label>
+      <input
+        name="caloric"
+        onChange={[Function]}
+        type="number"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`<CalculatorForm /> matches snapshot 1`] = `
+<form
+  className="calculator-form"
+>
+  <div
+    className="food-brands padding-bottom-small"
+  >
+    <div
+      className="other-food-brands padding-bottom-small"
+    >
+      <label
+        className="label"
+      >
+        Name of dog food brand
+      </label>
+      <select
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value=""
+        >
+          - Select a Brand -
+        </option>
+        <option
+          value="Bonio"
+        >
+          Bonio
+        </option>
+        <option
+          value="Milk-Bone"
+        >
+          Milk-Bone
+        </option>
+        <option
+          value="Friskies"
+        >
+          Friskies
+        </option>
+      </select>
+    </div>
+    <div
+      className="nnn-food-brand padding-bottom-small"
+    >
+      <label
+        className="label"
+      >
+        Compare with NomNomNow
+      </label>
+      <select
+        onChange={[Function]}
+        value="Heartland Beef Mash"
+      >
+        <option
+          value="Porkalicious Potluck"
+        >
+          Porkalicious Potluck
+        </option>
+        <option
+          defaultValue="Heartland Beef Mash"
+        >
+          Heartland Beef Mash
+        </option>
+        <option
+          value="Chicken Chow-Wow"
+        >
+          Chicken Chow-Wow
+        </option>
+        <option
+          value="Tasty Turkey Fare"
+        >
+          Tasty Turkey Fare
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    className="padding-bottom-small"
+  >
+    Dog food brand's nutrient info:
+  </div>
+  <div
+    className="inputs"
+  >
+    <div
+      className="padding-bottom-small padding-right-small ingredients"
+    >
+      <label
+        className="label"
+      >
+        % protein (min.)
+      </label>
+      <input
+        name="protein"
+        onChange={[Function]}
+        type="number"
+      />
+    </div>
+    <div
+      className="padding-bottom-small padding-right-small ingredients"
+    >
+      <label
+        className="label"
+      >
+        % fat (min.)
+      </label>
+      <input
+        name="fat"
+        onChange={[Function]}
+        type="number"
+      />
+    </div>
+    <div
+      className="padding-bottom-small ingredients"
+    >
+      <label
+        className="label"
+      >
+        Caloric density (kcal/kg)
+      </label>
+      <input
+        name="caloric"
+        onChange={[Function]}
+        type="number"
+      />
+    </div>
+  </div>
+</form>
+`;
